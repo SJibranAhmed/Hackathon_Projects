@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder - Milestone 1</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header>
+      <div class="container">
+        <h1><span>H</span>acka<span>T</span>hon</h1>
+        <nav>
+          <ul>
+            <!-- Navigation links to different sections of the resume -->
+            <li><a href="#personal-info">Personal Info</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content of the resume -->
+    <main>
+      <!-- Personal Information Section -->
+      <section id="personal-info">
+        <h2>
+          Personal Information
+          <!-- Ionicon for information -->
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </h2>
+        <div id="sec1">
+          <div class="leftSide">
+            <!-- Profile picture and name -->
+            <img src="profile.webp" alt="Profile Picture" />
+            <div class="name">
+              <h1>Sheikh Jibran Ahmed</h1>
+            </div>
+          </div>
+          <div class="rightSide">
+            <!-- Personal introduction and contact details -->
+            <p class="greet">Hello everyone!</p>
+            <p>
+              <strong>Alhumdulillah!</strong> completed with excellent
+              problem-solving skills and innovation. <br />
+              Now it's time to celebrate my success and let your hackathon
+              project shine!
+            </p>
+            <div class="detail">
+              <p>
+                <span><ion-icon name="mail-outline"></ion-icon></span>
+                Sheikhjibran889970@gmail.com
+              </p>
+              <p>
+                <span><ion-icon name="location-outline"></ion-icon></span>
+                sector 12/L Orangi Town
+              </p>
+              <p>
+                <span><ion-icon name="call-outline"></ion-icon></span>
+                0315-9936336
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <h2>
+          Education
+          <!-- Ionicon for education -->
+          <ion-icon name="school-outline"></ion-icon>
+        </h2>
+        <ul>
+          <li>
+            <h3>Intermediate</h3>
+            <p>
+              Intermedia passed in science pre-medical at Shipowner's college
+            </p>
+          </li>
+          <li>
+            <h3>Memorization of the Qur'aan</h3>
+            <p>
+              I memorized the entire Quran in 3.5 years, deepening my
+              understanding and strengthening my spiritual connection
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <div>
+          <h2>
+            Skills
+            <!-- Ionicon for skills -->
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+          </h2>
+          <ul id="skillshow">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>HTML & CSS</li>
+            <li>React</li>
+          </ul>
+          <!-- Button to show/hide skills (if functionality is added later) -->
+          <button id="toggle-skills">Show Skills</button>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section id="work-experience">
+        <h2>
+          Work Experience
+          <!-- Ionicon for work experience -->
+          <ion-icon name="brush-outline"></ion-icon>
+        </h2>
+        <ul>
+          <li>Frontend Developer - ABC Company (2024-Present)</li>
+          <li>Intern - DEF Company (2023-2024)</li>
+          <li>Work with multiple companies (2022-2024)</li>
+        </ul>
+      </section>
+
+      <!-- Footer section -->
+      <section class="footer">
+        <div>
+          <p>
+            Thanks for reserving by <ion-icon name="heart-outline"></ion-icon>
+            Sheikh Jibran Ahmed
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Scripts for Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

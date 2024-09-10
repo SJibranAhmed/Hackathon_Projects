@@ -1,0 +1,494 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+    backdrop-filter: blur(20px);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 60px;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixed Navbar */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.container h1:hover {
+  transform: scale(1.03);
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.container span {
+  color: purple;
+}
+/* Header Title */
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 1.1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #5a648f;
+  color: #fff;
+}
+
+/* Main Content Section */
+body {
+  position: relative;
+  background: url("bg-2.webp") no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 70px; /* Adjust to accommodate the fixed header */
+  width: 100%; /* Ensure full width */
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px; /* Padding for all sections */
+  border-radius: 10px;
+  width: 90%;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text and content */
+  position: relative;
+  top: 0; /* Adjust to accommodate fixed header */
+  scroll-margin-top: 70px; /* Space for fixed header */
+}
+
+/* Personal Information Section */
+#personal-info {
+  height: 600px;
+  color: #f4f4f9;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(26, 39, 185),
+    rgb(100, 100, 194)
+  );
+  opacity: 0.9;
+}
+
+#personal-info h2 ion-icon {
+  position: relative;
+  top: 10px;
+}
+#personal-info #sec1 {
+  display: flex;
+  margin-top: 100px;
+}
+
+#personal-info img {
+  position: relative;
+  top: -100px;
+  max-width: 400px;
+  border-radius: 36% 41% 59% / 55% 73% 27% 45%;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#personal-info span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#personal-info .rightSide {
+  font-family: system-ui;
+  text-align: left;
+  margin-top: -20px;
+  margin-left: 40px;
+}
+.name {
+  width: 342px;
+
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes deleting {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+.leftSide h1 {
+  position: relative;
+  top: -100px;
+  color: seashell;
+  font-family: math;
+  letter-spacing: 1px;
+  font-size: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(20);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.rightSide .greet {
+  font-size: 70px;
+}
+
+.rightSide h1 {
+  font-size: 33px;
+  letter-spacing: 4px;
+}
+
+.rightSide strong {
+  font-size: 22px;
+  font-family: cursive;
+  color: rgb(81, 33, 81);
+  letter-spacing: 3px;
+}
+
+.rightSide .detail {
+  margin-top: 50px;
+}
+
+.rightSide .detail p {
+  display: flex;
+  align-items: center;
+}
+
+.rightSide .detail span {
+  color: rgb(142, 142, 142);
+  margin-right: 15px;
+}
+
+/* Education Section */
+#education {
+    margin-top: 100px;
+  padding: 100px 50px;
+  color: #f4f4f9;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(26, 39, 185),
+    rgb(100, 100, 194)
+  );
+  opacity: 0.9;
+}
+
+#education h2 ion-icon {
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
+}
+
+#education ul {
+  margin-top: 60px;
+  list-style: none;
+  padding: 0;
+}
+
+#education li {
+  background-color: white;
+  font-family: cursive;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+#education li h3 {
+  color: purple;
+}
+
+#education li:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#education h3 {
+  font-size: 2rem;
+  color: #5a648f;
+  margin-bottom: 10px;
+}
+
+#education p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Skills Section */
+#skills {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  height: 600px;
+  color: #f4f4f9;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(26, 39, 185),
+    rgb(100, 100, 194)
+  );
+  opacity: .93;
+}
+
+#skills ion-icon{
+    position: relative;
+    top: 5px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#skills li {
+  background-color: #3a3f58;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#skills li:hover {
+  background-color: #5a648f;
+  transform: scale(1.05);
+}
+
+#toggle-skills {
+  margin-top: 20px;
+  background-color: #3a3f58;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#toggle-skills:hover {
+  background-color: #5a648f;
+  transform: scale(1.05);
+}
+
+/* Work Experience Section */
+#work-experience {
+    height: 600px;
+  margin-top: 110px;
+  padding: 100px 50px;
+  color: #f4f4f9;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(26, 39, 185),
+    rgb(100, 100, 194)
+  );
+  opacity: .93;
+}
+
+#work-experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+#work-experience li {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1.2rem;
+  color: #555;
+  transition: box-shadow 0.3s ease;
+}
+
+#work-experience li:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#work-experience li::before {
+  content: "💼";
+  margin-right: 10px;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+/* Font Sizes for Sections */
+h1 {
+  font-size: 3rem; /* Increased font size */
+}
+
+#personal-info h2,
+#education h2,
+#skills h2,
+#work-experience h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem; /* Increased font size */
+}
+
+#personal-info h3 {
+  font-size: 2.2rem; /* Increased font size */
+}
+
+/* For Footer  */
+.footer{
+    border-radius:0px;
+    position: relative;
+    top: 40px;
+    box-shadow:10px 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: #fff;
+    backdrop-filter: blur(20px);
+}
+
+.footer p{
+    font-size: 30px;
+}
+
+.footer p ion-icon{
+    color: red;
+    font-size: 35px;
+    position: relative;
+    top: 5px;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Adjusted font size for mobile */
+  }
+
+  #personal-info h2,
+  #education h2,
+  #skills h2,
+  #work-experience h2 {
+    font-size: 2.5rem; /* Adjusted font size for mobile */
+  }
+
+  #personal-info h3 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    width: 90%;
+    padding-top: 80px; /* Adjust for mobile view */
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Adjusted font size for very small screens */
+  }
+
+  #personal-info h2,
+  #education h2,
+  #skills h2,
+  #work-experience h2 {
+    font-size: 1.8rem; /* Adjusted font size for very small screens */
+  }
+
+  #personal-info h3 {
+    font-size: 1.5rem; /* Adjusted font size for very small screens */
+  }
+
+  #skills ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #skills li,
+  #work-experience li {
+    font-size: 1rem;
+  }
+
+  #personal-info img {
+    max-width: 120px;
+  }
+}
